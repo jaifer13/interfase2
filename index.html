@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Interativo</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Painel Interativo</h1>
+        
+        
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <h4>Ferramentas para o Painel de Texto</h4>
+                <div class="control-group mb-2">
+                    <input type="text" class="form-control" id="textInput" placeholder="Digite seu texto">
+                    <button class="btn btn-primary mt-2" id="addButton">Adicionar</button>
+                    <button class="btn btn-danger mt-2" id="clearButton">Limpar</button>
+                </div>
+                <div class="font-tools mb-2">
+                    <label for="fontSizeSlider">Tamanho da fonte</label>
+                    <input type="range" class="form-range" id="fontSizeSlider" min="10" max="50" value="16">
+                </div>
+                <div class="color-control mb-2">
+                    <label for="colorPicker">Cor do texto:</label>
+                    <input type="color" id="colorPicker">
+                </div>
+                <div class="position-control mb-2">
+                    <button class="btn btn-outline-secondary position-button" data-position="left">Esquerda</button>
+                    <button class="btn btn-outline-secondary position-button" data-position="center">Centro</button>
+                    <button class="btn btn-outline-secondary position-button" data-position="right">Direita</button>
+                </div>
+                <div class="background-control mb-2">
+                    <label for="backgroundColorPicker">Cor de fundo:</label>
+                    <input type="color" id="backgroundColorPicker">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h4>Ferramentas para o Painel de Imagem</h4>
+                <div class="image-tools mb-2">
+                    <input type="file" class="form-control" id="imageUpload" accept="image/*">
+                    <button class="btn btn-success mt-2" id="addImage">Adicionar Imagem</button>
+                    <button class="btn btn-danger mt-2" id="clearImageButton">Limpar Imagem</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="canvas border p-3" style="min-height: 300px;">
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="canvas2 border p-3" style="min-height: 300px;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

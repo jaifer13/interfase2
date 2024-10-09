@@ -1,0 +1,38 @@
+
+body {
+    background-color: red; 
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color:blue; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.canvas, .canvas2 {
+    background-color: #1e3e4276; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+.canvas{
+    background-color: white;
+}
+
+h1 {
+    color: #0a0b0b; 
+}
+
+button {
+    margin-right: 10px;
+}
+
+input[type="color"] {
+    margin-left: 10px;
+}
+
+.control-group, .font-tools, .color-control, .position-control, .background-control, .image-tools {
+    margin-bottom: 15px;
+}
