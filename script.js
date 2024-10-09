@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Função para limpar o texto
     clearButton.addEventListener("click", function () {
         canvas.innerHTML = "";
+         textInput.value = ""; 
     });
 
     // Atualizar tamanho da fonte em tempo real
